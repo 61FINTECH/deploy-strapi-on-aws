@@ -317,6 +317,6 @@ Now you have:
 * Forced HTTPS-secured traffic for all
 * Auto-renew SSL certificates for free
 
-[![tip](https://img.shields.io/badge/BuyMe-aCoffee-brightgreen.svg)](https://github.com/kenberkeley/tip)
-
 > PRs & issues are welcome! Sharing your experience will save others' time!
+
+[![tip](https://img.shields.io/badge/BuyMe-aCoffee-brightgreen.svg)](https://github.com/kenberkeley/tip)
