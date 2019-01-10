@@ -223,6 +223,11 @@ Visit [PLUGINS > Files Upload](http://localhost:1337/admin/plugins/upload/config
 If you'd like to equip GraphQL, visit [GENERAL > Marketplace](http://localhost:1337/admin/install-plugin) to download.  
 Refer to https://strapi.io/documentation/3.x.x/guides/graphql.html for further info.
 
+### ⊙ Configure response & security
+Since Strapi will be running behind a well-tuned Nginx, you should:
+* Visit [GENERAL > Configurations > ENVIRONMENTS > Response](http://localhost:1337/admin/plugins/settings-manager/response/production), set *Production* & *Staging*'s *Gzip* to `OFF`
+* Visit [GENERAL > Configurations > ENVIRONMENTS > Security](http://localhost:1337/admin/plugins/settings-manager/security/development), copy all the settings from *Development* to *Production* & *Staging*
+
 ### ⊙ Push to a [Github free private repo](https://blog.github.com/2019-01-07-new-year-new-github/) (or Gitlab, etc)
 ```json
 $ git init
