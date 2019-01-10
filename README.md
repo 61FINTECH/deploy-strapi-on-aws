@@ -228,6 +228,8 @@ Since Strapi will be running behind a well-tuned Nginx, you should:
 * Visit [GENERAL > Configurations > ENVIRONMENTS > Response](http://localhost:1337/admin/plugins/settings-manager/response/production), set *Production* & *Staging*'s *Gzip* to `OFF`
 * Visit [GENERAL > Configurations > ENVIRONMENTS > Security](http://localhost:1337/admin/plugins/settings-manager/security/development), copy all the settings from *Development* to *Production* & *Staging*
 
+> For more details, please turn to https://strapi.io/documentation/3.x.x/configurations/configurations.html
+
 ### ⊙ Push to a [Github free private repo](https://blog.github.com/2019-01-07-new-year-new-github/) (or Gitlab, etc)
 ```json
 $ git init
