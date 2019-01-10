@@ -1,7 +1,8 @@
 # Deploying a Strapi API on AWS (EC2 & RDS & S3)
-> Goal: build a HTTPS-secured Strapi API with dev & staging & prod modes
+> Goal: build a HTTPS-secured Strapi API with dev & staging & prod modes.  
+> Install https://github.com/camsong/chrome-github-mate for a better reading experience.
 
-Everything done in the following is [AWS Free Tier](https://aws.amazon.com/free/) eligible.
+Everything done in the following is [AWS Free Tier](https://aws.amazon.com/free/) eligible.  
 Make sure you have already skimmed the [Strapi docs](https://strapi.io/documentation/3.x.x) before you start.
 
 ## § Create EC2 instance / RDS instance / S3 bucket
@@ -129,14 +130,14 @@ $ strapi new strapi-cms \
     --dbpassword=<RDS password>
 ```
 
-Finally, **DO NOT** rush to `strapi start` for now.
-There are some preparatory procedures to accomplish.
+Finally, **DO NOT** rush to `strapi start` for now.  
+There are some preparatory procedures to accomplish.  
 (By the way, you may be interested in https://strapi.io/documentation/3.x.x/advanced/usage-tracking.html)
 
 ### ⊙ Complete database configuration
 > If you prefer best practices like https://12factor.net/config and https://github.com/i0natan/nodebestpractices/blob/master/sections/projectstructre/configguide.md , you'd better use tools like [dotenv](https://www.npmjs.com/package/dotenv) instead.
 
-`strapi-cms/config/environments/development/database.json` has been completed during the initialization.
+`strapi-cms/config/environments/development/database.json` has been completed during the initialization.  
 Complete `strapi-cms/config/environments/{staging|production}/database.json` based on it. For example:
 
 ```js
@@ -177,8 +178,8 @@ $ npm i -S strapi-provider-upload-aws-s3@alpha
 ### ⊙ Add npm scripts for staging & production mode
 > You can use [PM2 - Ecosystem File](https://pm2.io/doc/en/runtime/guide/ecosystem-file/) instead if you'd like to
 
-`npm start` is for development mode by default.
-You can set `NODE_ENV` before it according to https://strapi.io/documentation/3.x.x/guides/deployment.html .
+`npm start` is for development mode by default.  
+You can set `NODE_ENV` before it according to https://strapi.io/documentation/3.x.x/guides/deployment.html .  
 However, for the sake of compatibility, [cross-env](https://www.npmjs.com/package/cross-env) is introduced.
 
 ```shell
@@ -345,14 +346,14 @@ http {
 $ cd strapi-cms && strapi start
 ```
 
-Your browser will open http://localhost:1337 automatically later.
+Your browser will open http://localhost:1337 automatically later.  
 Create the admin with a strong password.
 
 ### ⊙ Complete S3 settings
 Visit [PLUGINS > Files Upload](http://localhost:1337/admin/plugins/upload/configurations/development) to complete the S3 settings for all modes.
 
 ### ⊙ GraphQL
-If you'd like to equip GraphQL, visit [GENERAL > Marketplace](http://localhost:1337/admin/install-plugin) to download.
+If you'd like to equip GraphQL, visit [GENERAL > Marketplace](http://localhost:1337/admin/install-plugin) to download.  
 Refer to https://strapi.io/documentation/3.x.x/guides/graphql.html for further info.
 
 ### ⊙ Push to a [Github free private repo](https://blog.github.com/2019-01-07-new-year-new-github/) (or Gitlab, etc)
