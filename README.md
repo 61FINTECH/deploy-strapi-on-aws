@@ -310,7 +310,7 @@ All done! Visit https://{cms|staging-cms|dev-cms}.yourdomain.com to see if it wo
 * See https://strapi.io/documentation/3.x.x/guides/deployment.html
 * Remove `strapi-cms/public/index.html`
 
-### ⊙ Summary
+## § Summary
 Now you have:
 * A Strapi API running on dev & staging & prod mode simultaneously
 * PM2-guarded processes with reboot startup hooks
