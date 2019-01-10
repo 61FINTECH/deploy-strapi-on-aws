@@ -203,11 +203,10 @@ So `strapi-cms/package.json` may look like:
 }
 ```
 
-### ⊙ Add `nginx.conf` to the project root
-
+### ⊙ Add [`nginx.conf`](https://github.com/61FINTECH/deploy-strapi-on-aws/blob/master/nginx.conf) to the project root
 > If you prefer best practices using `/etc/nginx/{sites-available|sites-enabled}`, you may need help from https://nginxconfig.io or https://github.com/h5bp/server-configs-nginx . I prefer single file `nginx.conf` because of simplicity.
 
-Add [nginx.conf](https://github.com/61FINTECH/deploy-strapi-on-aws/blob/master/nginx.conf) to the project root, replace all `yourdomain.com` with yours.
+Don't forget to replace all `yourdomain.com` with yours.
 
 ### ⊙ Run
 ```shell
@@ -225,7 +224,6 @@ If you'd like to equip GraphQL, visit [GENERAL > Marketplace](http://localhost:1
 Refer to https://strapi.io/documentation/3.x.x/guides/graphql.html for further info.
 
 ### ⊙ Push to a [Github free private repo](https://blog.github.com/2019-01-07-new-year-new-github/) (or Gitlab, etc)
-
 ```json
 $ git init
 $ git add -A
@@ -307,6 +305,10 @@ $ sudo systemctl reload nginx
 ```
 
 All done! Visit https://{cms|staging-cms|dev-cms}.yourdomain.com to see if it works.
+
+### ⊙ Further optimizations
+* See https://strapi.io/documentation/3.x.x/guides/deployment.html
+* Remove `strapi-cms/public/index.html`
 
 ### ⊙ Summary
 Now you have:
