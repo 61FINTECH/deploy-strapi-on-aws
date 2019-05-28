@@ -214,7 +214,7 @@ $ cd strapi-cms && strapi start
 ```
 
 Your browser will open http://localhost:1337 automatically later.  
-Create the admin with a strong password.
+Create an admin with a strong password.
 
 ### ⊙ Complete S3 settings
 Visit [PLUGINS > Files Upload](http://localhost:1337/admin/plugins/upload/configurations/development) to complete the S3 settings for all modes.
@@ -265,15 +265,6 @@ $ pm2 startup
 $ pm2 save
 ```
 
-You can check if the startup hook works by rebooting the machine if you'd like to:
-
-```shell
-$ sudo reboot
-
-$ ssh -i strapi-cms.pem ubuntu@<ec2-public-ip>
-$ pm2 ls
-```
-
 ### ⊙ Replace `/etc/nginx/nginx.conf` with yours
 
 ```shell
@@ -319,7 +310,7 @@ All done! Visit https://{cms|staging-cms|dev-cms}.yourdomain.com to see if it wo
 
 ## § Summary
 Now you have:
-* A Strapi API running on dev & staging & prod mode simultaneously
+* A Strapi API running on dev & staging & prod modes simultaneously
 * PM2-guarded processes with reboot startup hooks
 * Forced HTTPS-secured traffic for all
 * Auto-renew SSL certificates for free
