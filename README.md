@@ -1,3 +1,9 @@
+⚠️ THIS REPOSITORY IS NO LONGER MAINTAINED. 
+
+👉 WE RECOMMEND FOLLOWING [THIS GUIDE](https://github.com/Qovery/terraform-examples/tree/main/examples/deploy-strapi-with-postgresql-on-aws) TO DEPLOY STRAPI ON AWS.
+
+
+----
 # Deploying a Strapi API on AWS (EC2 & RDS & S3)
 > Goal: build a HTTPS-secured Strapi API with dev & staging & prod modes
 
